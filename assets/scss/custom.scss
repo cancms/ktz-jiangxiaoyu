@@ -3,13 +3,18 @@
 
 
 //$navbar-theme-bg-primary:  #17535d; //导航栏背景色
-$navbar-theme-bg-primary:  #1565c0; //导航栏背景色
-$navbar-theme-text-primary:  #fff; //导航栏前景文字颜色
+$navbar-theme-bg-primary:  unset; //导航栏背景色
+$navbar-theme-text-primary:  #214986; //导航栏前景文字颜色
 $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
 
 
 
-
+.navbar{
+  box-shadow: none;
+}
+.navbar-brand img {
+  display: inline-block;
+}
 
 .user-icon-avatar {
   width: 150px;
@@ -56,35 +61,9 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
 .home-video-wrapper {
   position: relative;
 
-  .video-title-position {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  .video-title-wrap {
-    color: $navbar-theme-text-primary;
-    padding: 0.5rem 2rem;
-
-    background-color: $navbar-theme-bg-primary;
-    //border-top: 4px solid #e65100;
-    border-top: 4px solid $navbar-theme-top-line-primary;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    .video-title1 {
-      font-size: 3rem;
-    }
-    .video-subtitle1 {}
-  }
 
 
 
-}
-.banner-video1 {
-  max-height: unset !important;
 }
 .navbar {
   background-color: $navbar-theme-bg-primary;
@@ -99,44 +78,6 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
 
 
 
-//手机
-@media (max-width: 478px) {
-  .universal-wrapper {
-
-  }
-
-  .navbar-brand {
-    margin: 0 auto;
-  }
-
-
-  .video-title-wrap {
-
-    flex-flow: column;
-    align-items: flex-start !important;
-    padding: 0.5rem 1rem !important;
-
-
-    .video-title1 {
-      font-size: 1.5rem !important;
-      display: none;
-    }
-
-    .video-subtitle1 {
-      font-size: .9rem
-    }
-
-  }
-
-  #navbar-main .main-menu-item ul li .nav-link {
-    color: #2e2e2e;
-  }
-
-  .people-persons-list-row {
-    flex-direction: column;
-  }
-
-}
 
 
 .people-list-wrap .person-group-name {
@@ -172,6 +113,46 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
   .role-desc {
     border-left: 1px solid lightgray;
     padding-left: 1rem;
+  }
+
+}
+
+
+
+
+.home-cell-item {
+  margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//手机
+@media (max-width: 478px) {
+  .universal-wrapper {
+
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+
+  #navbar-main .main-menu-item ul li .nav-link {
+    color: #2e2e2e;
+  }
+
+  .people-persons-list-row {
+    flex-direction: column;
   }
 
 }

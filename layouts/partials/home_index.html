@@ -1,38 +1,234 @@
-
-
-<section id="section-banner-video" class="home-video-section">
-
-    <div>
-        {{ partial "components/headers/navbar.html" . }}
-    </div>
-
-</section> 
-
-
-{{/*
-jQuery轮播效果（Carousell）
-注意 prev nextl 两个button的href id 和 setction id要一致
-https://blog.csdn.net/chenmo2001/article/details/117674446
-*/}}
-{{ $heroBlock := .Params.heroBlock }}
-{{ $slider_hash_id := "hero_sliders" }}
-{{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
-<section id="section-hero" class="home-section wg-hero">
+<section id="section-research-news" class="home-section hs-research-news">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 text-center text-md-left">
-        <h1 class="hero-title" >{{ $heroBlock.content.title }}</h1>
-        <div class="hero-lead" >
-            {{ $heroBlock.content.text | markdownify }}
+      <div class="col-12 col-md-6 ">
+
+        <div class="livideo home-cell-item">
+          <video src="{{ "video/home.mp4" | relLangURL }}" controls=""></video>
         </div>
+
       </div>
-      <div class="col-12 col-md-6 hero-media carousel slide "
-           id="{{ $slider_hash_id }}">
-          {{ partial "blocks/slider.html" $slider_args }}
+      <div class="col-12 col-md-6 ">
+
+        <div class="liimg home-cell-item">
+          <a href="info/1011/1068.htm" target="_blank" title="课题组合影">
+            <img src="{{ "image/h-people.jpg" | relLangURL }}" alt="课题组合影">
+          </a>
+        </div>
+
       </div>
     </div>
+    <div class="row">
+      <div class="col-12 col-md-6 ">
+
+        <div class=" home-cell-item">
+          <div class="i_hd">
+            <h3>Research</h3>
+          </div>
+          <div class="i_bd">
+
+            <div class="item">
+              <div id="vsb_content_1171_u41">
+                <div id="vsb_content"><p>We live in a world with limited environmental resources to meet increasing
+                  demand of water, food, energy, raw materials and better healthcare. There are trade-offs within this
+                  Food-Energy-Water-Human health Nexus. Lignocellulosic biomass is the most abundant biomass on Earth,
+                  with an estimated 181.5 billion tonnes produced annually, and thus has great opportunities to replace
+                  petroleum derived chemicals and fuels.In our Biomass Energy and Materials Lab, our long term goal is
+                  to enable lignocellulosic bioeconomy via:<br>1. Efficient and sustainable solvent-based pretreatment
+                  technology<br>2. Exploring the innovative application in the form of materials to enable a
+                  bioeconomy<br>3. Establish multi-scale and multi-perspective sustainable assessment for above
+                  technology and supply chain designs</p></div>
+              </div>
+              <span id="vsb_content_1171_u4" name="vsb_content_1171_u4"></span>
+
+            </div>
+
+            <a class="btn_more" href="Research.htm" target="_blank">View More</a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 ">
+
+
+        <div class="home-news-block home-cell-item">
+          <div class="i_hd">
+            <h3>News</h3>
+          </div>
+          <div class="i_bd">
+            <div class="bd">
+              <div class="tempWrap"  >
+                <ul class="infoList"  >
+                  <li style="height: 41.3906px;">
+                    <span>2025-03-04</span>
+                    <a href="info/1004/1394.htm" target="_blank"
+                       title="Congratulations to Prof. Lei Wang on her appointment as the Associate Editor of ACS Sustainable Chemistry &amp; Engineering!">Congratulations
+                      to Prof. Lei Wang on her appointment as the Associate Editor of ACS Sustainable Chemistry &amp;
+                      Engineering!</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2025-02-27</span>
+                    <a href="info/1004/1391.htm" target="_blank"
+                       title="Congratulations to Zhongqi Liu and Yi Zhang for being awarded the 2025 Outstanding Graduate Students of Zhejiang University-Westlake University Joint Training Programme!">Congratulations
+                      to Zhongqi Liu and Yi Zhang for being awarded the 2025 Outstanding Graduate Students of Zhejiang
+                      University-Westlake University Joint Training Programme!</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-12-20</span>
+                    <a href="info/1004/1345.htm" target="_blank"
+                       title="Welcome Prof. Peng Wang for an academic lecture on campus">Welcome Prof. Peng Wang for an
+                      academic lecture on campus</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-11-27</span>
+                    <a href="info/1004/1333.htm" target="_blank"
+                       title="Welcome Prof. Sai Gu for an academic lecture, hosted by Prof. Lei Wang">Welcome Prof. Sai
+                      Gu for an academic lecture, hosted by Prof. Lei Wang</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-11-12</span>
+                    <a href="info/1004/1331.htm" target="_blank"
+                       title="Congratulations to Zhongqi Liu for being awarded 2023 PhD National Scholarship!">Congratulations
+                      to Zhongqi Liu for being awarded 2023 PhD National Scholarship!</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-10-25</span>
+                    <a href="info/1004/1303.htm" target="_blank"
+                       title="Congratulations to Yi Zhang for winning the ‘Outstanding Graduate Student Presentation Award’ at the 2nd Conference on Environmental Management of Chemical Substances and New Pollutant Management Technologies.">Congratulations
+                      to Yi Zhang for winning the ‘Outstanding Graduate Student Presentation Award’ at the 2nd
+                      Conference on Environmental Management of Chemical Substances and New Pollutant Management
+                      Technologies.</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-09-03</span>
+                    <a href="info/1004/1324.htm" target="_blank"
+                       title="Welcome Prof. Hui Luo for an academic lecture on campus">Welcome Prof. Hui Luo for an
+                      academic lecture on campus</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-08-27</span>
+                    <a href="info/1004/1291.htm" target="_blank"
+                       title="Welcome Prof. Haibo Xiefor an academic lecture on campus">Welcome Prof. Haibo Xiefor an
+                      academic lecture on campus</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-08-26</span>
+                    <a href="info/1004/1292.htm" target="_blank"
+                       title="Congratulations to Chenyuan Zhang for defending his dissertation!">Congratulations to
+                      Chenyuan Zhang for defending his dissertation!</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-07-05</span>
+                    <a href="info/1004/1284.htm" target="_blank"
+                       title="Welcome Prof. Chunbao Xu to give Westlake Engineering Lecture Series (WELS) lecture">Welcome
+                      Prof. Chunbao Xu to give Westlake Engineering Lecture Series (WELS) lecture</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-06-28</span>
+                    <a href="info/1004/1285.htm" target="_blank"
+                       title="Welcome Prof. Zhenglong Li to give Westlake Engineering Lecture Series (WELS) lecture">Welcome
+                      Prof. Zhenglong Li to give Westlake Engineering Lecture Series (WELS) lecture</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-06-05</span>
+                    <a href="https://gxulif.gxu.edu.cn/info/1407/5941.htm" target="_blank"
+                       title="Prof. Lei Wang was invited by Guangxi University to give an academic lecture">Prof. Lei
+                      Wang was invited by Guangxi University to give an academic lecture</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-05-28</span>
+                    <a href="info/1004/1276.htm" target="_blank"
+                       title="Welcome Prof. Zongsu Wei for an academic lecture on campus">Welcome Prof. Zongsu Wei for
+                      an academic lecture on campus</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-05-27</span>
+                    <a href="https://mp.weixin.qq.com/s/obMZ1V6GrJZ3LZFGl4qIOQ" target="_blank"
+                       title="New release by SOE: A new strategy for chitosan film deformation proposed by Lei Wang’s group">New
+                      release by SOE: A new strategy for chitosan film deformation proposed by Lei Wang’s group</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-05-23</span>
+                    <a href="https://mp.weixin.qq.com/s/aDraUndB4Mw9bmqTq3-FWg" target="_blank"
+                       title="Prof. Lei Wang was invited to deliver a special lecture at the College of Environmental Science and Engineering of Zhejiang Gongshang University (ZJTU)">Prof.
+                      Lei Wang was invited to deliver a special lecture at the College of Environmental Science and
+                      Engineering of Zhejiang Gongshang University (ZJTU)</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-05-16</span>
+                    <a href="info/1004/1273.htm" target="_blank"
+                       title="Welcome Prof. Ondrej Masek for an academic lecture on campus">Welcome Prof. Ondrej Masek
+                      for an academic lecture on campus</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-04-30</span>
+                    <a href="info/1004/1271.htm" target="_blank"
+                       title="Congratulations to Yi Zhang for winning the ‘Outstanding Poster Award’ at the 9th National Ecotoxicology Conference.">Congratulations
+                      to Yi Zhang for winning the ‘Outstanding Poster Award’ at the 9th National Ecotoxicology
+                      Conference.</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-04-07</span>
+                    <a href="https://mp.weixin.qq.com/s/VvZ6KV-jZdCtcOlewUGISg" target="_blank"
+                       title="Cell Reports Physical Science| Conversion of Waste Phytoremediation Biomass into Adhesive Using a Novel Deep Eutectic Solvent">Cell
+                      Reports Physical Science| Conversion of Waste Phytoremediation Biomass into Adhesive Using a Novel
+                      Deep Eutectic Solvent</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-03-14</span>
+                    <a href="https://mp.weixin.qq.com/s/SXu5LKIJht9SedrYuZlrbQ" target="_blank"
+                       title="Green Chemistry| Molecular Dynamics Simulation + Quantum Chemistry Computing">Green
+                      Chemistry| Molecular Dynamics Simulation + Quantum Chemistry Computing</a>
+                  </li>
+                  <li style="height: 41.3906px;">
+                    <span>2024-02-27</span>
+                    <a href="info/1004/1256.htm" target="_blank"
+                       title="Congratulations to Chenyuan Zhang and Yi Zhang for being awarded the 2024 Outstanding Graduate Students of Zhejiang University-Westlake University Joint Training Programme">Congratulations
+                      to Chenyuan Zhang and Yi Zhang for being awarded the 2024 Outstanding Graduate Students of
+                      Zhejiang University-Westlake University Joint Training Programme</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <div class="i_hd">
+        <h3>News</h3>
+      </div>
+      <div class="row">
+
+        <div class="col-12 col-md-3 ">
+          <a class="a1" href="https://iscps.westlake.edu.cn/" title="物质科学公共实验平台" onclick="_addDynClicks(&quot;wbimage&quot;, 1584437013, 64405)" target="_blank">
+            <img src="{{ "image/lab-1.jpg" | relLangURL }}" alt="物质科学公共实验平台">
+            <p>物质科学公共实验平台</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-3 ">
+          <a class="a2" href="https://iscms.westlake.edu.cn/" title="分子科学公共实验平台" onclick="_addDynClicks(&quot;wbimage&quot;, 1584437013, 64406)" target="_blank">
+            <img src="{{ "image/lab-2.png" | relLangURL }}" alt="分子科学公共实验平台">
+            <p>分子科学公共实验平台</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-3 ">
+          <a class="a3" href="https://hpc.westlake.edu.cn/" title="高性能计算中心" onclick="_addDynClicks(&quot;wbimage&quot;, 1584437013, 64407)" target="_blank">
+            <img src="{{ "image/lab-3.png" | relLangURL }}" alt="高性能计算中心">
+            <p>高性能计算中心</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
+
 
 {{/*
 {{ $newsBlock := .Params.newsBlock }}

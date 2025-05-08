@@ -7,8 +7,8 @@
 
 appearance:
 #  theme_day: minimal
-  theme_day: apec
-  theme_night:
+  theme_day: iirl
+  theme_night: dark
   font: native
   font_size: M  # S   M   L
 
