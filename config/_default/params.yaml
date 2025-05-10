@@ -10,7 +10,7 @@ appearance:
   theme_day: iirl
   theme_night: dark
   font: native
-  font_size: M  # S   M   L
+  font_size: S  # S   M   L
 
 # SEO
 
@@ -41,7 +41,7 @@ header:
     show_day_night: false
     show_search: false
     show_translations: false
-    highlight_active_link: false
+    highlight_active_link: true
 
 # Site footer
 

@@ -1,4 +1,15 @@
-// Make page header alignment consistent with widget page header alignment
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Montserrat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
 .universal-wrapper h1 {
   text-align: center;
 }
@@ -29,6 +40,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: "Montserrat", "PingFang SC", "Microsoft Yahei", 微软雅黑, Arial, simHei,"宋体",Helvetica;
+  color: #4a4a4a;
 }
 
 /* Sections
@@ -386,6 +398,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  font-family: inherit;
 }
 
 
@@ -547,11 +560,12 @@ h6 {
 
 
 
-.html_show h2.cat_name { line-height: 1.2; color: #2c6ed7; }
+#profile h2.cat_name { line-height: 1.2; color: #2c6ed7; padding: 2rem 0; }
 .show_content_box { line-height: 1.8; color: #333; font-size: 16px; }
 .show_content_box .show_meta_info { text-align: center; color: #999; margin: 1em auto; }
 .show_content_box p { margin-bottom: 1em; }
-.show_content_box img { max-width: 100%; }
+.show_content_box img { max-width: 100%; margin: auto;}
+
 
 
 @media ( max-width:1200px){
@@ -600,7 +614,7 @@ h6 {
 }
 
 
-.top_bar { border-bottom: 2px solid #003055; overflow: hidden; padding: 15px 50px;}
+.top_bar { border-bottom: 3px solid #003055; overflow: hidden; padding: 15px 50px;}
 .logo { padding: 0; width: 610px; float: left; border-bottom-width: 0;}
 .logo img { height: 50px;}
 .logo h2 { font-size: 20px; margin-top: 16px;}
@@ -684,3 +698,71 @@ h6 {
 .index_r3 .i_bd .a2 { margin: 0 2%;}
 .index_r3 .i_bd img { width: 100%; display: block;}
 .index_r3 .i_bd p { height: 2em; line-height: 2em; color: #333;}
+
+
+
+
+.type_box { border-radius: 6px; box-shadow: 0 .5em 1em -0.125em #0a0a0a1a,0 0px 0 1px #0a0a0a05; overflow: hidden; margin-top: 50px;}
+.list_box .pi_box,
+.list_box .sc_bd { padding: 20px; overflow: hidden;}
+
+.list_box .cat_name,
+.list_box .sc_hd h3 { border: 1px solid #0000001a; font-size: 28px; color: #363636; padding-left: 15px; margin-top: 0; display: block; text-align: left; background-color: #ededed; border-radius: 6px 6px 0 0;}
+.list_box .pi_box .pi_thumb { border-radius: 5px;}
+
+.list_box .sc_hd .h3_1,
+.list_box .sc_hd .h3_2,
+.list_box .sc_hd .h3_3,
+.list_box .sc_hd .h3_4,
+.list_box .sc_hd .h3_5,
+.list_box .sc_hd .h3_6 { color: #363636;}
+.pi_name { color: #363636; font-size: 20px;}
+.pi_text { font-size: 16px; text-align: justify;}
+
+.list_box .pi_box .pi_intro { margin: 0 0 0 2%; float: right; line-height: 1.5;  color: #4a4a4a;}
+
+@media ( max-width:1200px){
+  .pi_text { font-size: 16px;}
+}
+
+.list_box .sc_bd li { width: 50%; margin: 0 0 1.5em;}
+.list_box .sc_bd img { margin-right: 2em; width: 122px;display: block; float: left; border-radius: 5px; border: 1px solid #f3f3f3; box-sizing: border-box;}
+.list_box .sc_bd h4 {  font-size: 20px;  line-height: 2; color: #363636;}
+
+.ptext { float: left; width: calc( 100% - 160px );}
+.sub_text { white-space: pre;  line-height: 1.1; color: #4a4a4a;}
+
+
+@media ( max-width:1200px){
+
+  .list_box .sc_bd li { width: 100%; margin: 0 0 1.2em;}
+  .list_box .sc_bd img { margin-right: 2%; width: 38%;}
+  .sub_text { width: 60%;}
+}
+@media ( max-width: 890px){
+  .list_box .sc_bd li { margin: 0 0 0.8em;}
+}
+
+.list_box .sc_bd li { width: 50%; margin: 0 0 1.5em;}
+.list_box .sc_bd img { margin-right: 2em; width: 122px;display: block; float: left; border-radius: 5px; border: 1px solid #f3f3f3; box-sizing: border-box;}
+.list_box .sc_bd h4 {  font-size: 20px;  line-height: 2; color: #363636;}
+
+.ptext { float: left;}
+.sub_text { white-space: pre;  line-height: 1.1; color: #4a4a4a;}
+.sub_p { line-height: 1.6; color: #4a4a4a;}
+
+
+@media ( max-width:1200px){
+
+  .list_box .sc_bd li { width: 100%; margin: 0 0 1.2em;}
+  .list_box .sc_bd img { margin-right: 2%; width: 38%;}
+  .sub_text { width: 60%;}
+}
+@media ( max-width: 890px){
+  .list_box .sc_bd li { margin: 0 0 0.8em;}
+}
+
+.list_box .sc_bd .intro_text { display: none;}
+.list_box .sc_bd_c li { width: 100%; text-align: left; line-height: 2.5; padding-left: 15px; margin: 0;}
+.list_box .sc_bd_c li .text_intro { color: #555;}
+.list_box .sc_bd_c li .text_intro span { color: #222; margin-right: 0.5em;}

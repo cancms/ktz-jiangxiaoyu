@@ -1,32 +1,56 @@
 // Override this file to add your own SCSS styling.
 
 
-
 //$navbar-theme-bg-primary:  #17535d; //导航栏背景色
-$navbar-theme-bg-primary:  unset; //导航栏背景色
-$navbar-theme-text-primary:  #214986; //导航栏前景文字颜色
-$navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
+$navbar-theme-bg-primary: unset; //导航栏背景色
+$navbar-theme-text-primary: #214986; //导航栏前景文字颜色
+$navbar-theme-top-line-primary: #8dc015; //导航栏顶部横线颜色
 
 
+.page-header-not-animate   {
 
-.navbar{
-  box-shadow: none;
 }
+
+a {
+  color: #4a4a4a;
+}
+
+h3.article-title a:hover, a:hover {
+  color: unset;
+  text-decoration: unset;
+}
+
+.navbar {
+  background-color: $navbar-theme-bg-primary;
+  box-shadow: none;
+  padding-top: 2rem;
+}
+
 .navbar-brand img {
   display: inline-block;
 }
 
-.user-icon-avatar {
-  width: 150px;
-  height: 150px;
+#navbar-main .main-menu-item ul li .nav-link {
+  color: $navbar-theme-text-primary;
+  font-size: 1.3rem;
+}
+
+.navbar-light .navbar-brand {
+  color: $navbar-theme-text-primary;
+}
+
+
+
+.logo-r-text {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.home-video-wrapper {
+  height: 428px;
+  background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: darkgrey;
-  font-size: 4rem;
-  margin: 0 auto;
-  object-fit: cover;
-  color: #666;
 }
 
 #section-hero {
@@ -38,6 +62,7 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
   .hero-title {
     font-size: 1.5rem;
   }
+
   .hero-lead {
     font-size: 0.8rem;
   }
@@ -51,6 +76,7 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
   .card-simple .article-title {
     font-size: 0.8rem;
   }
+
   .card-simple .article-style {
     font-size: 0.8rem;
   }
@@ -62,61 +88,7 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
   position: relative;
 
 
-
-
 }
-.navbar {
-  background-color: $navbar-theme-bg-primary;
-  //background-color: #1565c0;
-}
-#navbar-main .main-menu-item ul li .nav-link {
-  color: $navbar-theme-text-primary;
-}
-.navbar-light .navbar-brand {
-  color: $navbar-theme-text-primary;
-}
-
-
-
-
-
-.people-list-wrap .person-group-name {
-  margin-top: 1rem;
-  border-bottom: 1px solid #68a8f1;
-  display: inline-block;
-  padding: 1rem 0;
-}
-
-.people-persons-list-row {
-
-  border-bottom: 1px solid lightgray;
-  width: 100%;
-  padding: 0 0 2rem 0;
-  margin: 0 0 2rem 0;
-
-  display: flex;
-  .person-img {
-    img {
-      max-width: 270px;
-      height: auto;
-    }
-    padding: 1rem;
-
-  }
-  .person-desc {
-    flex: 1;
-    padding-left: 1rem;
-  }
-  .avatar {
-    margin: 0 !important;
-  }
-  .role-desc {
-    border-left: 1px solid lightgray;
-    padding-left: 1rem;
-  }
-
-}
-
 
 
 
@@ -124,13 +96,56 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
   margin-top: 1em;
 }
 
+.article-single-wrap {
+  .article-title {
+    padding: 2rem 0 3rem 0;
+  }
+
+  .article-content {
+    padding: 1rem 0;
+    li {
+      list-style: auto;
+      padding: 1rem 0;
+    }
+  }
+}
 
 
 
+.people-list-wrap  {
+  .member-card {
+    display: flex;
+    margin: 1.3rem 0;
 
 
+    .member-img {
+      a {
+        width: 180px;
+        display: block;
+        padding-right: 1rem;
+      }
 
 
+      img {
+        max-width: unset;
+        width: 150px;
+      }
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+.article-title {
+  h1 {
+    font-size: 1.6rem;
+    font-weight: unset;
+  }
+
+}
 
 
 
@@ -154,5 +169,6 @@ $navbar-theme-top-line-primary:  #8dc015; //导航栏顶部横线颜色
   .people-persons-list-row {
     flex-direction: column;
   }
+
 
 }
