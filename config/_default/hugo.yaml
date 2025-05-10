@@ -67,3 +67,9 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+
+
+
+module:
+  proxies: "https://goproxy.cn,direct"

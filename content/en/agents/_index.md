@@ -1,8 +1,10 @@
 ---
-title: News
+title: Agents
 
 # Listing view
 view: compact
+
+#type: event
 
 # Optional header image (relative to `assets/media/` folder).
 banner:

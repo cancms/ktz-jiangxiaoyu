@@ -1,3 +1,6 @@
+{{ $newsBlock := .Params.newsBlock }}
+{{ $news_args := dict "wcPage" $ "wcBlock" $newsBlock "wcIdentifier" "latest_news" }}
+
 <section id="section-research-news" class="home-section hs-research-news">
   <div class="container">
     <div class="row">
@@ -43,7 +46,7 @@
 
             </div>
 
-            <a class="btn_more" href="Research.htm" target="_blank">View More</a>
+            <a class="see-all" href='{{ "research" | relLangURL }}' target="_blank">VIEW MORE <i class="fas fa-angle-right"></i> </a>
 
           </div>
         </div>
@@ -60,135 +63,19 @@
             <div class="bd">
               <div class="tempWrap"  >
                 <ul class="infoList"  >
-                  <li style="height: 41.3906px;">
-                    <span>2025-03-04</span>
-                    <a href="info/1004/1394.htm" target="_blank"
-                       title="Congratulations to Prof. Lei Wang on her appointment as the Associate Editor of ACS Sustainable Chemistry &amp; Engineering!">Congratulations
-                      to Prof. Lei Wang on her appointment as the Associate Editor of ACS Sustainable Chemistry &amp;
-                      Engineering!</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2025-02-27</span>
-                    <a href="info/1004/1391.htm" target="_blank"
-                       title="Congratulations to Zhongqi Liu and Yi Zhang for being awarded the 2025 Outstanding Graduate Students of Zhejiang University-Westlake University Joint Training Programme!">Congratulations
-                      to Zhongqi Liu and Yi Zhang for being awarded the 2025 Outstanding Graduate Students of Zhejiang
-                      University-Westlake University Joint Training Programme!</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-12-20</span>
-                    <a href="info/1004/1345.htm" target="_blank"
-                       title="Welcome Prof. Peng Wang for an academic lecture on campus">Welcome Prof. Peng Wang for an
-                      academic lecture on campus</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-11-27</span>
-                    <a href="info/1004/1333.htm" target="_blank"
-                       title="Welcome Prof. Sai Gu for an academic lecture, hosted by Prof. Lei Wang">Welcome Prof. Sai
-                      Gu for an academic lecture, hosted by Prof. Lei Wang</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-11-12</span>
-                    <a href="info/1004/1331.htm" target="_blank"
-                       title="Congratulations to Zhongqi Liu for being awarded 2023 PhD National Scholarship!">Congratulations
-                      to Zhongqi Liu for being awarded 2023 PhD National Scholarship!</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-10-25</span>
-                    <a href="info/1004/1303.htm" target="_blank"
-                       title="Congratulations to Yi Zhang for winning the ‘Outstanding Graduate Student Presentation Award’ at the 2nd Conference on Environmental Management of Chemical Substances and New Pollutant Management Technologies.">Congratulations
-                      to Yi Zhang for winning the ‘Outstanding Graduate Student Presentation Award’ at the 2nd
-                      Conference on Environmental Management of Chemical Substances and New Pollutant Management
-                      Technologies.</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-09-03</span>
-                    <a href="info/1004/1324.htm" target="_blank"
-                       title="Welcome Prof. Hui Luo for an academic lecture on campus">Welcome Prof. Hui Luo for an
-                      academic lecture on campus</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-08-27</span>
-                    <a href="info/1004/1291.htm" target="_blank"
-                       title="Welcome Prof. Haibo Xiefor an academic lecture on campus">Welcome Prof. Haibo Xiefor an
-                      academic lecture on campus</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-08-26</span>
-                    <a href="info/1004/1292.htm" target="_blank"
-                       title="Congratulations to Chenyuan Zhang for defending his dissertation!">Congratulations to
-                      Chenyuan Zhang for defending his dissertation!</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-07-05</span>
-                    <a href="info/1004/1284.htm" target="_blank"
-                       title="Welcome Prof. Chunbao Xu to give Westlake Engineering Lecture Series (WELS) lecture">Welcome
-                      Prof. Chunbao Xu to give Westlake Engineering Lecture Series (WELS) lecture</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-06-28</span>
-                    <a href="info/1004/1285.htm" target="_blank"
-                       title="Welcome Prof. Zhenglong Li to give Westlake Engineering Lecture Series (WELS) lecture">Welcome
-                      Prof. Zhenglong Li to give Westlake Engineering Lecture Series (WELS) lecture</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-06-05</span>
-                    <a href="https://gxulif.gxu.edu.cn/info/1407/5941.htm" target="_blank"
-                       title="Prof. Lei Wang was invited by Guangxi University to give an academic lecture">Prof. Lei
-                      Wang was invited by Guangxi University to give an academic lecture</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-05-28</span>
-                    <a href="info/1004/1276.htm" target="_blank"
-                       title="Welcome Prof. Zongsu Wei for an academic lecture on campus">Welcome Prof. Zongsu Wei for
-                      an academic lecture on campus</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-05-27</span>
-                    <a href="https://mp.weixin.qq.com/s/obMZ1V6GrJZ3LZFGl4qIOQ" target="_blank"
-                       title="New release by SOE: A new strategy for chitosan film deformation proposed by Lei Wang’s group">New
-                      release by SOE: A new strategy for chitosan film deformation proposed by Lei Wang’s group</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-05-23</span>
-                    <a href="https://mp.weixin.qq.com/s/aDraUndB4Mw9bmqTq3-FWg" target="_blank"
-                       title="Prof. Lei Wang was invited to deliver a special lecture at the College of Environmental Science and Engineering of Zhejiang Gongshang University (ZJTU)">Prof.
-                      Lei Wang was invited to deliver a special lecture at the College of Environmental Science and
-                      Engineering of Zhejiang Gongshang University (ZJTU)</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-05-16</span>
-                    <a href="info/1004/1273.htm" target="_blank"
-                       title="Welcome Prof. Ondrej Masek for an academic lecture on campus">Welcome Prof. Ondrej Masek
-                      for an academic lecture on campus</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-04-30</span>
-                    <a href="info/1004/1271.htm" target="_blank"
-                       title="Congratulations to Yi Zhang for winning the ‘Outstanding Poster Award’ at the 9th National Ecotoxicology Conference.">Congratulations
-                      to Yi Zhang for winning the ‘Outstanding Poster Award’ at the 9th National Ecotoxicology
-                      Conference.</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-04-07</span>
-                    <a href="https://mp.weixin.qq.com/s/VvZ6KV-jZdCtcOlewUGISg" target="_blank"
-                       title="Cell Reports Physical Science| Conversion of Waste Phytoremediation Biomass into Adhesive Using a Novel Deep Eutectic Solvent">Cell
-                      Reports Physical Science| Conversion of Waste Phytoremediation Biomass into Adhesive Using a Novel
-                      Deep Eutectic Solvent</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-03-14</span>
-                    <a href="https://mp.weixin.qq.com/s/SXu5LKIJht9SedrYuZlrbQ" target="_blank"
-                       title="Green Chemistry| Molecular Dynamics Simulation + Quantum Chemistry Computing">Green
-                      Chemistry| Molecular Dynamics Simulation + Quantum Chemistry Computing</a>
-                  </li>
-                  <li style="height: 41.3906px;">
-                    <span>2024-02-27</span>
-                    <a href="info/1004/1256.htm" target="_blank"
-                       title="Congratulations to Chenyuan Zhang and Yi Zhang for being awarded the 2024 Outstanding Graduate Students of Zhejiang University-Westlake University Joint Training Programme">Congratulations
-                      to Chenyuan Zhang and Yi Zhang for being awarded the 2024 Outstanding Graduate Students of
-                      Zhejiang University-Westlake University Joint Training Programme</a>
-                  </li>
+                  {{ partial "blocks/home-news-collection.html" $news_args }}
+
                 </ul>
+
+                {{ $archive_text := $newsBlock.content.archive.text }}
+
+                <div class="see-all">
+                  <a href='{{ "event" | relLangURL }}'>
+                    {{ $archive_text | emojify }}
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+
               </div>
             </div>
 
@@ -233,34 +120,5 @@
 </section>
 
 
-{{/*
-{{ $newsBlock := .Params.newsBlock }}
-{{ $pubsBlock := .Params.publicationsBlock }}
-{{ $news_args := dict "wcPage" $ "wcBlock" $newsBlock "wcIdentifier" "latest_news" }}
-{{ $pubs_args := dict "wcPage" $ "wcBlock" $pubsBlock "wcIdentifier" "latest_pubs" }}
-<section id="section-news" class="home-section wg-news">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-7 text-center text-md-left">
-          <div><h1>{{ $newsBlock.content.title }}</h1></div>
-          {{ partial "blocks/collection.html" $news_args }}
-      </div>
-
-      <div class="col-12 col-md-5  text-center text-md-left ">
-        <div><h1>{{ $pubsBlock.content.title }}</h1></div>
-          {{ partial "blocks/collection.html" $pubs_args }}
-      </div>
-    </div>
-  </div>
-</section>
 
 
-{{ $team_args := dict "wcPage" $ "wcBlock" .Params.teamsBlock "wcIdentifier" "meet_the_team" }}
-<section id="section-meet-team" class="home-section wg-team">
-  <div class="container">
-    <div class="row">
-          {{ partial "blocks/markdown.html" $team_args }}
-    </div>
-  </div>
-</section>
-*/}}

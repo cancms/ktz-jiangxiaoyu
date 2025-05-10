@@ -23,13 +23,13 @@ main:
 
 
   - name: News
-    url: post
+    url: event
     weight: 50
 
   - name: Agents
-    url: event
+    url: agents
     weight: 60
 
   - name: Join us
-    url: contact
+    url: joinus
     weight: 70
